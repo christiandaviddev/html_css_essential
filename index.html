@@ -126,5 +126,17 @@
     <footer>
         @ HTML + CSS Essentials
     </footer>
+
+    <script>
+        const detailList = document.querySelectorAll('details');
+        detailList.forEach((details) => {
+            details.querySelector('summary').addEventListener('click', expand);
+        })
+        function expand() {
+            detailList.forEach((details) => {
+                details.removeAttribute('open')
+            })
+        }
+    </script>
 </body>
 </html>
